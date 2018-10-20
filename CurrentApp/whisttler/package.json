@@ -1,0 +1,49 @@
+{
+  "name": "whisttler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app nodemon app.js",
+    "lint": "./node_modules/.bin/eslint app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "eslint": "^5.3.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.3.0",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.6",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.18.3",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "promise": "^8.0.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": "./node_modules/**/node_modules",
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": "4000"
+    }
+  }
+}
